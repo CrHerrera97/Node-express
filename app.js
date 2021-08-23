@@ -20,6 +20,22 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
+//conexion a base de datos con mongo db
+
+const mongoose = require('mongoose');
+
+const user = "riki";
+const password = "1234";
+const uri = `mongodb+srv://riki:${password}@cluster0.974p2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+
+
+
+mongoose.connect(uri,
+    {useNewUrlParser: true, useUnifiedTopology: true}
+    )
+    .then(() => console.log("base de datos conectada"))
+    .catch(e => console.log(e))
+
 //motor de plantillas
 
 app.set("view engine","ejs");
