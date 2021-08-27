@@ -1,0 +1,27 @@
+<%- include("template/cabecera",{tituloWeb : "hola"}) %> 
+
+<div class="container"> 
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">nombre</th>
+                <th scope="col">cargo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (arrayPersonal.length >0 ) { %> 
+                <% arrayPersonal.forEach(personal => { %> 
+                    
+                    <tr>
+                        <th scope="row"><%=personal.id %></th>
+                        <td><%=personal.nombre%></td>
+                        <td><%=personal.cargo%></td>
+                    </tr>
+                <%})%>
+            <% } %>
+        </tbody>
+    </table>
+</div>
+
+<%- include("template/footer") %> 

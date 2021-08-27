@@ -50,6 +50,8 @@ app.use("/",require("./router/RutasWeb"));
 
 app.use("/mascotas",require("./router/Mascotas"));
 
+app.use("/personal",require("./router/Personal"));
+
 app.use((req, res ,next) =>{
     res.status(404).render("404",{
         titulo: "404",
