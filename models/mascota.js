@@ -4,10 +4,9 @@ const Schema = mongoose.Schema;
 const mascotaSchema = new Schema({
     nombre: String,
     descripcion: String
-})
+});
 
 //creamos el modelo
 
-const Mascota = mongoose.model("Mascota",mascotaSchema);
-
+const Mascota = mongoose.model("Mascota", mascotaSchema);
 module.exports = Mascota;

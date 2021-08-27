@@ -24,9 +24,10 @@ const port = process.env.PORT || 3000;
 
 const mongoose = require('mongoose');
 
+
 const user = "riki";
-const password = "1234";
-const uri = `mongodb+srv://riki:${password}@cluster0.974p2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const password = "NmGUvvucL54y09IO";
+const uri = `mongodb+srv://riki:${password}@cluster0.974p2.mongodb.net/veterinaria?retryWrites=true&w=majority`;
 
 
 
